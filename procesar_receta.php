@@ -10,6 +10,13 @@
     move_uploaded_file($ruta,$destino); 
     include 'partes/conexion.php';
     $db->query("INSERT INTO plato VALUES (NULL, '$Nombre', '$Descripcion','$Duracion','$Dificultad','$destino')");
-    header("Location:index.php");
+    $sentencia_plato = "SELECT * FROM plato where NombrePlato = $Nombre";
+    $sentencia=$db->query($sentencia_ingrediente);
+    $ingrediente= $sentencia->fetchAll();
+    foreach($ingrediente as $i){
+        $id = $i['IdPlato'];
+    }
+
+    header("Location:registrar_ingrediente.php?id=$id");
 
 ?>
