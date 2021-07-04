@@ -63,7 +63,7 @@
             </div>
             
         <?php }?>
-        
+        <img src="ingrediente/huevo.jpg" alt="">
     </div>    
     
     <?php include 'partes/footer.php'?>
