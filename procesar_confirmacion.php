@@ -9,6 +9,4 @@
         $db->query("UPDATE usuario SET Estado = 2 WHERE Email = '$Email'");
         header("Location:index.php?exito=1");
     }
-    
-
 ?>
