@@ -1,4 +1,9 @@
-
+<?php
+    include 'partes/conexion.php';
+    $sentencia_categoria = "SELECT * FROM categoria";
+    $sentencia=$db->query($sentencia_categoria);
+    $categoria= $sentencia->fetchAll();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,6 +43,15 @@
                         <option value="facil">Facil</option>
                         <option value="intermedio">Intermedio</option>
                         <option value="dificil">Dificil</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Categoria">Categoria* </label>
+                    <select class="form-control" aria-label="Default select example" name="IdCategoria">
+                        <option selected>Seleccione</option>
+                        <?php foreach($categoria as $c) { ?>
+                        <option value="<?php echo $c["IdCategoria"]?>"><?php echo $c["Nombre"]?></option>
+                        <?php }?>
                     </select>
                 </div>
                 <div class="form-group">
