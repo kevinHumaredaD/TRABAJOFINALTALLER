@@ -15,12 +15,6 @@
           <a class="nav-link" href="registrar_receta.php" style="font-size: 22px; color:#FF6242"> Registrar Receta</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="registrar_receta.php" style="font-size: 22px; color:#FF6242"> Registrar Ingrediente</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="registrar_receta.php" style="font-size: 22px; color:#FF6242"> Registrar Paso</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="mostrar_categoria.php" style="font-size: 22px; color:#FF6242">Ver por categoría</a>
         </li>
       </ul>
