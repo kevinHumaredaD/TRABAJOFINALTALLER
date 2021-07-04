@@ -20,7 +20,7 @@
     <?php foreach($categoria as $c){ ?>
             <div class="col mb-4">
                 <div class="card h-100">
-                <div class="card-body pt-4 pb-4" style="text-align:center; background-image: url('https://img.freepik.com/vector-gratis/fondo-pintura-acuarela-rosa-vibrante_53876-58930.jpg?size=626&ext=jpg')">
+                <div class="card-body pt-4 pb-4" style="text-align:center; background-image: url('../<?php echo $c["categoria"]?>')">
                     <form action="procesar_categoria.php" method="post">
                             <input type="hidden" name="IdCategoria" value="<?php echo $c["IdCategoria"]; ?>">
                             <button type="submit" style="border:1px solid transparent; background-color: transparent;"><?php echo $c["Nombre"]; ?></button>
