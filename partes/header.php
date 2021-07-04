@@ -9,16 +9,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.php" style="font-size: 25px; color:#FF6242">Inicio <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.php" style="font-size: 22px; color:#FF6242">Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="registrar_receta.php" style="font-size: 25px; color:#FF6242"> Registrar Receta</a>
+          <a class="nav-link" href="registrar_receta.php" style="font-size: 22px; color:#FF6242"> Registrar Receta</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="registrar_receta.php" style="font-size: 25px; color:#FF6242"> Registrar Ingrediente</a>
+          <a class="nav-link" href="registrar_receta.php" style="font-size: 22px; color:#FF6242"> Registrar Ingrediente</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="registrar_receta.php" style="font-size: 25px; color:#FF6242"> Registrar Paso</a>
+          <a class="nav-link" href="registrar_receta.php" style="font-size: 22px; color:#FF6242"> Registrar Paso</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mostrar_categoria.php" style="font-size: 22px; color:#FF6242">Ver por categoría</a>
         </li>
       </ul>
       

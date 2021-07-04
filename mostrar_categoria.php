@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="hojaestilo/estilodepagina.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
 <img _ngcontent-c15="" alt="" class="nd-icons-custom-img" src="www.nooddle.es/assets/nooddle-nuevas-recetas-icon.png">
@@ -19,6 +20,15 @@
     <?php foreach($categoria as $c){ ?>
             <div class="col mb-4">
                 <div class="card h-100">
-                <p></p>
+                <div class="card-body" style="text-align:center">
+                    <form action="procesar_categoria.php" method="post">
+                            <input type="hidden" name="IdCategoria" value="<?php echo $c["IdCategoria"]; ?>">
+                            <button type="submit" style="border:1px solid white; background-color: transparent;"><?php echo $c["Nombre"]; ?></button>
+                    </form> 
+                </div>     
+                </div>
+            </div>
+    <?php }?>
+</div>        
 </body>
 </html>l
