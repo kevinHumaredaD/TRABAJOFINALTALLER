@@ -16,14 +16,31 @@
 </head>
 <body>
     <?php include 'partes/header.php' ?>
-    <div class="row justify-content-center">
-        <img src="<?php echo $plato["Foto"];?>" alt="">
+    <div class="row justify-content-center bg-light">
+      <div class="col-6">
+        <div class="row mb-2 shadow bg-white">
+            <img class="img-fluid" src="<?php echo $plato["Foto"];?>" alt="">
+        </div>
+        <div class="row my-2 bg-white">
+            <h2 class="text-center">Introducción</h2>
+            <p class="text-center fs-5"><?php echo $plato["Descripción"];?></p>
+        </div>
+        <div class="row fs-3 my-2 bg-white">
+            <div class="col-6">
+              <p class="text-center fs-5">Dificultad: <span class="fw-bold"><?php echo $plato["Dificultad"];?></span></p>
+            </div>
+            <div class="col-6">
+            <p class="text-center fs-5">Duración: <span class="fw-bold"><?php echo $plato["Duracion"];?></span></p>
+            </div>
+        </div>
+        <div class="row fs-3 my-2 bg-white">
+        <h2 class="text-center">Ingredientes</h2>
+        </div>
+        <div class="row fs-3 my-2 bg-white">
+          <h2 class="text-center">Pasos</h2>
+          <p class="text-center fs-5"><?php echo $plato["Pasos"];?></p>
+        </div>
+      </div>
     </div>
-    <div class="row fs-1 justify-content-center py-2 ">Introducción
-    
-    </div>
-    <div class="row justify-content-center py-2 ">Items</div>
-    <div class="row justify-content-center py-2 ">Ingredientes</div>
-    <div class="row justify-content-center py-2 ">Pasos</div>
 </body>
 </html>
