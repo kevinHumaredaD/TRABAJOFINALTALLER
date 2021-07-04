@@ -20,10 +20,14 @@
     <?php foreach($categoria as $c){ ?>
             <div class="col mb-4">
                 <div class="card h-100">
-                <div class="card-body pt-4 pb-4" style="text-align:center; background-image: url('../<?php echo $c["categoria"]?>')">
+                <div class="card-body pt-5 pb-5" style="text-align:center; 
+                 background: linear-gradient(
+                    rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.2)
+                ),url(<?php echo $c["Foto"]?>) center;">
                     <form action="procesar_categoria.php" method="post">
                             <input type="hidden" name="IdCategoria" value="<?php echo $c["IdCategoria"]; ?>">
-                            <button type="submit" style="border:1px solid transparent; background-color: transparent;"><?php echo $c["Nombre"]; ?></button>
+                            <button type="submit" style="border:1px solid transparent; background-color: transparent; color:white; font-weight:bold"><?php echo $c["Nombre"]; ?></button>
                     </form> 
                 </div>     
                 </div>
