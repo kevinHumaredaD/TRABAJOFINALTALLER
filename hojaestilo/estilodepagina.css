@@ -1,0 +1,188 @@
+
+.contenedor{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url(../imagen/fondocomida.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.6);
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.contenedor_inicio{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url(../imagen/fondo2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.6);
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width:300px;
+}
+.alto{
+    max-height:320px;
+}
+.derecha{
+    padding-left:5%;
+    padding-right:5%;
+    width: 50%;
+}
+.derecha label{
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.derecha input{
+    border-color: white;    
+    border-width: 2px;
+    background: inherit;
+    color: white;
+}
+.derecha select{
+    border-color: white;    
+    border-width: 2px;
+    background: inherit;
+    color: white;
+}
+.derecha textarea{
+    border-color: white;    
+    border-width: 2px;
+    background: inherit;
+    color: white;
+}
+#custom-button {
+    padding: 10px;
+    color: white;
+    background-color: #009578;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  
+  #custom-button:hover {
+    background-color: #00b28f;
+  }
+  
+  #custom-text {
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: #aaa;
+  }
+.derecha input::placeholder { 
+    color: rgba(255, 255, 255, 0.788); 
+}
+.derecha textarea::placeholder { 
+    color: rgba(255, 255, 255, 0.788); 
+}
+.izquierda{
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 50%;
+}
+.izquierda .titulo{
+    font: oblique bold 120% cursive;
+    font-size: 8vw;
+    color:white;
+    text-align: center;
+}
+.izquierda .t2{
+    font: oblique bold 120% cursive;
+    font-size: 2.4vw;
+    font-weight: 400;
+    color:white;
+    text-align: center;
+}
+.izquierda .t3{
+    font: oblique bold 120% cursive;
+    font-size: 2vw;
+    
+    font-weight: 200;
+    color:white;
+    text-align: center;
+}
+.izquierda .t4{
+    font: oblique bold 120% cursive;
+    font-size: 2vw;
+    text-decoration: underline;
+    font-weight: 200;
+    color:white;
+    text-align: start;
+}
+.contenedor_nav{
+    padding: 0px 5%;
+    background-color:#FFF;
+}
+
+@media (max-width: 990px) {
+    .logo{
+        width: 200px;
+    }
+    .contenedor_nav{
+        padding: 0px 2%;
+        background-color:#FFF;
+    }
+}
+@media (max-width: 400px) {
+    .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+    }   
+    .contenedor_inicio{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .derecha{
+        width: 100%;
+    }
+    .izquierda{
+        width: 100%;
+    }
+    .izquierda .titulo{
+        font: oblique bold 120% cursive;
+        font-size: 12vw;
+        color:white;
+        text-align: center;
+    }
+    .izquierda .t2{
+        font: oblique bold 120% cursive;
+        font-size: 5vw;
+        font-weight: 400;
+        color:white;
+        text-align: center;
+    }
+    .izquierda .t3{
+        font: oblique bold 120% cursive;
+        font-size: 4vw;
+        
+        font-weight: 200;
+        color:white;
+        text-align: center;
+    }
+    .izquierda .t4{
+        font: oblique bold 120% cursive;
+        font-size: 4vw;
+        text-decoration: underline;
+        font-weight: 200;
+        color:white;
+        text-align: start;
+    }
+    .contenedor_nav{
+        padding: 0px;
+        background-color:#FFF;
+    }
+}
