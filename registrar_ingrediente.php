@@ -26,15 +26,18 @@
     <div style="background-color:#1e1e1e;">
         <br/>
         <h1 style="text-align:center; margin:0px;color:white;" class="pt-2">Ingredientes existentes en el platillo <?php echo $plato["NombrePlato"]?></h1>  
+        <br/>
         <?php if(count($platoingrediente) == 0) {?>
             <br/>
-            <p style="text-align:center; color:white; margin-bottom:0px " >No existen ingredientes para esta receta.</p>     
+            <p style="text-align:center; color:white; margin-bottom:0px " >No existen ingredientes para esta receta.</p>
+                 
         <?php } else { ?> 
-            <table class="table">
+            <table class="table-striped table-dark table-bordered" style="width:80%;margin-left:auto;margin-right:auto">
                 <thead>
                     <tr>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Foto</th>
+                    <th scope="col" style="text-align:center;">Nombre</th>
+                    <th scope="col" style="text-align:center;">Foto</th>
+                    <th scope="col" style="text-align:center;">Cantidad</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -46,32 +49,36 @@
                             $sentencia_ie=$db->query($sentencia_ingrediente_existe);
                             $i_existente= $sentencia_ie->fetch();
                         ?>
-                        <td><?php echo $i_existente["Nombre"]?></td>
-                        <td><img src="<?php echo $i_existente["Foto"]; ?>" class="alto card-img-top " alt="..."></td>
+                        <td style="text-align:center;"><?php echo $i_existente["Nombre"]?></td>
+                        <td style="text-align:center;"><img style="width:50px " src="<?php echo $i_existente["Foto"]; ?>" class="alto card-img-top " alt="..."></td>
+                        <td style="text-align:center;"><?php echo $pi["Cantidad"]?></td>
                     </tr>
                     <?php }?> 
                 </tbody>
             </table>
+            <div style="margin-left:auto;margin-right:auto;width:30%;">
+                <a class="btn btn-outline-success" href="index.php" role="button">Terminar Registro</a>
+            </div>
         <?php } ?> 
         <h1 style="text-align:center; margin:0px;color:white;" class="pt-2">Seleccionar Ingrediente para <?php echo $plato["NombrePlato"]?></h1>
     </div>
 
     <div class="w-100 mr-0 ml-0 pr-3 pl-3 pt-3" style="background-color:#1e1e1e">
         
-            <table class="table-light  table-striped ">
+            <table class="table-striped table-dark table-bordered" style="width:80%;margin-left:auto;margin-right:auto">
                 <thead>
                     <tr>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Foto</th>
-                    <th scope="col">Añadir</th>
+                    <th scope="col" style="text-align:center;">Nombre</th>
+                    <th scope="col"style="text-align:center;">Foto</th>
+                    <th scope="col"style="text-align:center;">Añadir Ingrediente</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php foreach($ingrediente as $i){ ?>
                     <tr>
-                        <td><?php echo $i["Nombre"]?></td>
-                        <td><img style="width:50px "src="<?php echo $i["Foto"]; ?>" class="alto card-img-top " alt="..."></td>
-                        <td>
+                        <td style="text-align:center;"><?php echo $i["Nombre"]?></td>
+                        <td style="text-align:center;"><img style="width:50px "src="<?php echo $i["Foto"]; ?>" class="alto card-img-top " alt="..."></td>
+                        <td style="text-align:center;">
                             <div>
                                 <form action="procesar_ingrediente.php" method="post">
                                     <input type="hidden" name="IdPlato" value="<?php echo $idPlato; ?>">

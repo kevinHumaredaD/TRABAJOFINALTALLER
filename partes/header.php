@@ -1,5 +1,5 @@
-<div class="contenedor_nav">
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color:#FFF"> 
+<div class="contenedor_nav bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background-color:#FFF"> 
 
     <a class="navbar-brand" href="index.php"><span style="color:#FF6242; font-weight: bold; font-size:34px;">ComidAccesible</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

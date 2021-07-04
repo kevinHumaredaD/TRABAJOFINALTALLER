@@ -55,6 +55,10 @@
                     </select>
                 </div>
                 <div class="form-group">
+                    <label for="Descripcion">Pasos*</label>
+                    <textarea class="form-control" name="Descripcion" id="Descripcion" cols="30" rows="10" placeholder="Ingrese la serie de pasos necesarios para realizar la receta."required></textarea>
+                </div>
+                <div class="form-group">
                     <label for="exampleFormControlFile1">Ingrese una imagen referencial* </label>
                     <br/>
                     <input type="file" name="Imagen" class="form-control-file" id="Imagen" accept="image/*" required hidden="hidden">
