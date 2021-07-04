@@ -37,6 +37,7 @@
                     <tr>
                     <th scope="col" style="text-align:center;">Nombre</th>
                     <th scope="col" style="text-align:center;">Foto</th>
+                    <th scope="col" style="text-align:center;">Tipo</th>
                     <th scope="col" style="text-align:center;">Cantidad</th>
                     </tr>
                 </thead>
@@ -51,6 +52,7 @@
                         ?>
                         <td style="text-align:center;"><?php echo $i_existente["Nombre"]?></td>
                         <td style="text-align:center;"><img style="width:50px " src="<?php echo $i_existente["Foto"]; ?>" class="alto card-img-top " alt="..."></td>
+                        <td style="text-align:center;"><?php echo $i_existente["Tipo"]?></td>
                         <td style="text-align:center;"><?php echo $pi["Cantidad"]?></td>
                     </tr>
                     <?php }?> 
@@ -70,6 +72,7 @@
                     <tr>
                     <th scope="col" style="text-align:center;">Nombre</th>
                     <th scope="col"style="text-align:center;">Foto</th>
+                    <th scope="col" style="text-align:center;">Tipo</th>
                     <th scope="col"style="text-align:center;">Añadir Ingrediente</th>
                     </tr>
                 </thead>
@@ -78,12 +81,13 @@
                     <tr>
                         <td style="text-align:center;"><?php echo $i["Nombre"]?></td>
                         <td style="text-align:center;"><img style="width:50px "src="<?php echo $i["Foto"]; ?>" class="alto card-img-top " alt="..."></td>
+                        <td style="text-align:center;"><?php echo $i["Tipo"]?></td>
                         <td style="text-align:center;">
                             <div>
                                 <form action="procesar_ingrediente.php" method="post">
                                     <input type="hidden" name="IdPlato" value="<?php echo $idPlato; ?>">
                                     <input type="hidden" name="IdIngrediente" value="<?php echo $i["IdIngrediente"]; ?>">
-                                    <input type="number" name="Cantidad" id="" required>
+                                    <input type="float" name="Cantidad" id="" required>
                                     <button type="submit"class="btn btn-primary " >Añadir Ingrediente</button>
                                 </form>                     
                             </div> 

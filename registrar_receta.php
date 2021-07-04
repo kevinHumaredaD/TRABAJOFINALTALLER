@@ -55,8 +55,8 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="Descripcion">Pasos*</label>
-                    <textarea class="form-control" name="Descripcion" id="Descripcion" cols="30" rows="10" placeholder="Ingrese la serie de pasos necesarios para realizar la receta."required></textarea>
+                    <label for="Pasos">Pasos*</label>
+                    <textarea class="form-control" name="Pasos" id="Pasos" cols="30" rows="10" placeholder="Ingrese la serie de pasos necesarios para realizar la receta."required></textarea>
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Ingrese una imagen referencial* </label>
