@@ -52,7 +52,7 @@
                             <p class="card-text"><?php echo $p["Dificultad"]; ?></p>                        
                         </div>  
                         <div>
-                            <form action="procesar_confirmacion.php" method="post">
+                            <form action="visualizar_receta.php" method="get">
                                 <input type="hidden" name="IdPlato" value="<?php echo $p["IdPlato"]; ?>">
                                 <button type="submit"class="btn btn-primary pl-5 pr-5" >Ver Receta</button>
                             </form>                     
