@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
-<div class="row row-cols-1 row-cols-md-4 w-100 mr-0 ml-0 pr-3 pl-3 pt-3" style="background-color:#1e1e1e">
+    <?php include 'partes/header.php'?>
+    <div class="row row-cols-1 row-cols-md-4 w-100 mr-0 ml-0 pr-3 pl-3 pt-3" style="background-color:#1e1e1e">
         
         <?php foreach($plato as $p){ ?>
             <div class="col mb-4">
@@ -44,6 +45,7 @@
             </div>
             
         <?php }?>
-    </div>    
+    </div> 
+    <?php include 'partes/footer.php'?>   
 </body>
 </html>

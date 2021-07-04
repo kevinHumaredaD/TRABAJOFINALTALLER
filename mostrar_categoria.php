@@ -10,12 +10,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Categorias</title>
     <link rel="stylesheet" href="hojaestilo/estilodepagina.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
-<img _ngcontent-c15="" alt="" class="nd-icons-custom-img" src="www.nooddle.es/assets/nooddle-nuevas-recetas-icon.png">
+<?php include 'partes/header.php'?>
 <div class="row row-cols-1 row-cols-md-4 w-100 mr-0 ml-0 pr-3 pl-3 pt-3" style="background-color:#1e1e1e">
     <?php foreach($categoria as $c){ ?>
             <div class="col mb-4">
@@ -29,6 +29,7 @@
                 </div>
             </div>
     <?php }?>
+    <?php include 'partes/footer.php'?>
 </div>        
 </body>
 </html>l
