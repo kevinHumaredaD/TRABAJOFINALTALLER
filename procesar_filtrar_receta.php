@@ -6,7 +6,6 @@ for ($i = 0; $i <= 68; $i++) {
     if(isset($_GET["$i"])){
         $var = $_GET["$i"];
             $text .= " IdIngrediente = '$var' or";
-
         }
 }
 $sentencia_plato_ingrediente = "SELECT distinct IdIngrediente FROM platoingrediente where ".$text." IdIngrediente = '100' ";
@@ -26,7 +25,7 @@ for ($i = 1; $i <= 31; $i++) {
             }
         }
     }
-    if($numero == count($plato_ingrediente)){
+    if($numero == count($plato_ingrediente) && count($plato_ingrediente) != 0 ){
         $db->query("INSERT INTO filtro VALUES ('$i')");
     }
 }
