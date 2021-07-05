@@ -16,16 +16,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hojaestilo/estilodepagina.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
     <?php include 'partes/header.php' ?>
     <div class="row justify-content-center bg-light">
       <div class="col-6">
-        <div class="row m-2 shadow bg-white">
-            <img class="" style="overflow: hidden;" src="<?php echo $plato["Foto"];?>" alt="">
-            <div class="row align-self-end ms-2 position-absolute fs-3" style=""><?php echo $plato["NombrePlato"];?></div>
+        <div class="row m-2 shadow bg-white position-relative overflow-hidden">
+            <img class="" src="<?php echo $plato["Foto"];?>" alt="">
+            <div class="row align-self-end fs-3 position-absolute d-inline" style="background: rgb(0,0,0,.3); padding: .3em">
+              <h1 class="ps-4" style="color:aliceblue"><?php echo $plato["NombrePlato"];?></h1>
+            </div>
         </div>
         <div class="row m-2 bg-white">
             <h2 class="text-center">Introducción</h2>
@@ -46,7 +50,7 @@
               <div class="col-1 align-self-center">
                 <img style="width:60px" src="<?php echo $i["foto"];?>" alt="">
               </div>
-              <div class="col-20 fs-5">
+              <div class="col-11 fs-5">
                 <div class="row fw-bolder"><?php echo $i["nombre"];?></div>
                 <div class="row fs-6">
                   <?php echo $i["cantidad"];?>
