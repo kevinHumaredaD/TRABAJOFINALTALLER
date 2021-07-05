@@ -12,6 +12,9 @@
           <a class="nav-link" href="index.php" style="font-size: 22px; color:#FF6242">Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="filtrar_receta.php" style="font-size: 22px; color:#FF6242"> Filtrar Receta</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="registrar_receta.php" style="font-size: 22px; color:#FF6242"> Registrar Receta</a>
         </li>
         <li class="nav-item">
