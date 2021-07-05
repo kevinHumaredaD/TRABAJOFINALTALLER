@@ -24,7 +24,7 @@
                 Buscar<input class="form-control" id="myInput" type="text" placeholder="Search..." />
                 <br />
             </h4>
-            <table class="table-striped table-dark table-bordered" style="width:80%;margin-left:auto;margin-right:auto">
+            <table class="table-striped table-light table-bordered" style="width:80%;margin-left:auto;margin-right:auto">
                 <thead>
                     <tr>
                     <th scope="col" style="text-align:center;">Ingrediente</th>
