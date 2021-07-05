@@ -40,7 +40,7 @@
               <p class="text-center fs-5">Dificultad: <span class="fw-bold"><?php echo $plato["Dificultad"];?></span></p>
             </div>
             <div class="col-6">
-              <p class="text-center fs-5">Duración: <span class="fw-bold"><?php echo $plato["Duracion"];?></span></p>
+              <p class="text-center fs-5">Duración: <span class="fw-bold"><?php echo $plato["Duracion"];?> minutos</span></p>
             </div>
         </div>
         <div class="row fs-3 m-2 bg-white">
