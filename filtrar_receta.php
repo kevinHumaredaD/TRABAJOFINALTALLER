@@ -9,7 +9,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentos</title>
+    <title>Filtrar recetas</title>
+    <link rel="shortcut icon" href="imagen/favicon.png">
     <link rel="stylesheet" href="hojaestilo/estilodepagina.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
@@ -24,7 +25,7 @@
                 Buscar<input class="form-control" id="myInput" type="text" placeholder="Search..." />
                 <br />
             </h4>
-            <table class="table-striped table-dark table-bordered" style="width:80%;margin-left:auto;margin-right:auto">
+            <table class="table-striped table-light table-bordered" style="width:80%;margin-left:auto;margin-right:auto">
                 <thead>
                     <tr>
                     <th scope="col" style="text-align:center;">Ingrediente</th>
