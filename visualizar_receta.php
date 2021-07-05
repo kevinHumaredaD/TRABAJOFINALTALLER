@@ -46,7 +46,7 @@
               <div class="col-1 align-self-center">
                 <img style="width:60px" src="<?php echo $i["foto"];?>" alt="">
               </div>
-              <div class="col-11 fs-5">
+              <div class="col-20 fs-5">
                 <div class="row fw-bolder"><?php echo $i["nombre"];?></div>
                 <div class="row fs-6">
                   <?php echo $i["cantidad"];?>
