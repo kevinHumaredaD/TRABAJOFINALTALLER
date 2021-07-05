@@ -23,14 +23,15 @@
     <?php include 'partes/header.php' ?>
     <div class="row justify-content-center bg-light">
       <div class="col-6">
-        <div class="row mb-2 shadow bg-white">
-            <img class="img-fluid" src="<?php echo $plato["Foto"];?>" alt="">
+        <div class="row m-2 shadow bg-white">
+            <img class="" style="overflow: hidden;" src="<?php echo $plato["Foto"];?>" alt="">
+            <div class="row align-self-end ms-2 position-absolute fs-3" style=""><?php echo $plato["NombrePlato"];?></div>
         </div>
-        <div class="row my-2 bg-white">
+        <div class="row m-2 bg-white">
             <h2 class="text-center">Introducción</h2>
             <p class="text-center fs-5"><?php echo $plato["Descripción"];?></p>
         </div>
-        <div class="row my-2 bg-white">
+        <div class="row m-2 bg-white">
             <div class="col-6">
               <p class="text-center fs-5">Dificultad: <span class="fw-bold"><?php echo $plato["Dificultad"];?></span></p>
             </div>
@@ -38,7 +39,7 @@
               <p class="text-center fs-5">Duración: <span class="fw-bold"><?php echo $plato["Duracion"];?></span></p>
             </div>
         </div>
-        <div class="row fs-3 my-2 bg-white">
+        <div class="row fs-3 m-2 bg-white">
           <h2 class="text-center">Ingredientes</h2>
           <?php foreach($ingrediente as $i){ ?>
             <div class="row m-1 bg-light">
@@ -56,7 +57,7 @@
             
           <?php } ?>
         </div>
-        <div class="row fs-3 my-2 bg-white">
+        <div class="row fs-3 m-2 bg-white">
           <h2 class="text-center">Pasos</h2>
           <p class="text-center fs-5"><?php echo $plato["Pasos"];?></p>
         </div>
