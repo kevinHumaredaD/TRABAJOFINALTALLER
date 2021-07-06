@@ -59,7 +59,7 @@
                     <?php }?> 
                 </tbody>
             </table>
-            <div style="margin-left:auto;margin-right:auto;width:30%;">
+            <div style="margin-left:auto;margin-right:auto;width:30%; margin-top: 15px;">
                 <a class="btn btn-outline-success" href="index.php" role="button">Terminar Registro</a>
             </div>
         <?php } ?> 

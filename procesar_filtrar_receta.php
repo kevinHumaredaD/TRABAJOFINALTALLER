@@ -11,7 +11,7 @@ for ($i = 0; $i <= 68; $i++) {
 $sentencia_plato_ingrediente = "SELECT distinct IdIngrediente FROM platoingrediente where ".$text." IdIngrediente = '100' ";
 $sentencia=$db->query($sentencia_plato_ingrediente);
 $plato_ingrediente= $sentencia->fetchAll();
-for ($i = 1; $i <= 31; $i++) {
+for ($i = 1; $i <= 40; $i++) {
 
     $sentencia_plato = "SELECT distinct IdIngrediente FROM platoingrediente where IdPlato ='$i' ";
     $sentencia=$db->query($sentencia_plato);
